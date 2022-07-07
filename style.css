@@ -1,0 +1,189 @@
+.navbar {
+    color: blueviolet;
+}
+
+.initdiv {
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;    
+}
+
+.banner {
+    color: white;
+    background-image: url(https://i.postimg.cc/XvZvbDT9/OFERTAS-1080-800-px-2048-500-px-2048-550-px-2048-900-px-2048-750-px-768-650-p.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;    
+    border-radius: 10px;         
+}
+
+.bannertittle {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 30px;   
+    font-weight: 700; 
+}
+
+.profilecol {   
+    text-align: right;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 70%;
+}
+
+.picturecol {
+    width: 30%;    
+}
+
+.profileheading {
+    width: 90%;    
+}
+
+.profileh4 {
+    font-size: 26px;
+}
+
+.subheading {
+    color: grey;
+    font-size: 14px;    
+}
+
+.schedule {
+    color: rgb(177, 177, 177);
+    font-size: 12px;
+}
+
+.profilepic {
+    width: 70%;
+    border-radius:  100%;
+    margin-top: 17%;
+    margin-left: 10%;
+}
+
+.profile {
+    width: 90%;
+    border-radius: 7px;    
+    border-width: 1px;
+    box-shadow: 1px 1px 8px rgb(167, 167, 167);
+}
+
+.heading {
+    width: 90%;
+}
+
+.todoh1 {
+    color: black;
+    text-align: left;    
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.todolist {
+    width: 90%;      
+}
+
+.listrow {
+    background-color: blue;
+    background-image: url(https://i.postimg.cc/k4mdrJZs/fondomobile-B.png);
+    background-size: 100%;
+    border-radius: 10px;
+    padding-top: 10%;
+    box-shadow: 1px 1px 5px grey;    
+}
+
+.list {
+    margin-bottom: 10%;
+}
+
+.buttonsdiv {
+    width: 95%;    
+}
+
+.buttonsrow {
+    margin-top: 10%;          
+}
+
+.addtask {
+    color: #E50695;
+    background-color: white;
+    border-radius: 25px;
+    border-color: #E50695;
+    border-style: solid;
+    font-size: 18px;
+    font-weight: 600; 
+    width: auto; 
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 4%;
+    padding-left: 4%; 
+    margin-bottom: 2%;
+    margin-right: 2%; 
+}
+
+.edittask {
+    color: #E50695;
+    background-color: white;
+    border-radius: 25px;
+    border-color: #E50695;
+    border-style: solid;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    width: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 4%;
+    padding-left: 4%;
+    margin-bottom: 2%;
+    margin-right: 2%; 
+}
+
+.deletetask {
+    color: white;
+    border-color: rgb(253, 66, 66);
+    border-style: solid;
+    background-color: rgb(253, 66, 66);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    width: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 4%;
+    padding-left: 4%;
+    margin-bottom: 2%; 
+}
+
+.footer {
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+.logo {
+    width: 40%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 4%;
+}
+
+.footerlogo {
+   width: 100%;   
+}
+
+.footermenu1 {
+    list-style:none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8%;
+}
+
+.footermenu2 {
+    list-style:none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8%;
+}
