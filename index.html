@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="CRUD.js" type="text/script"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="icon" href="https://cdn.shopify.com/s/files/1/0549/7487/3737/files/Favicon_1_2x_34d0a66b-7fec-4ad8-91eb-113b44cc402d.png?v=1650471357"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/CSS">
-    <title>GosiGats - Tareas del Staff</title>
+    <title>GosiGats - Intranet Staff</title>    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -76,7 +75,7 @@
         </div>
         <div class="row justify-content-center listrow">  
             <div class="col-lg-8 col-md-12 col-xs-12">                
-                <div class="list">
+                <div class="list" id="tasklist">
                     <ol class="list-group list-group-numbered">
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                           <div class="ms-2 me-auto">
@@ -123,13 +122,13 @@
                             </div>
                             <div class="mb-3">
                                 <label for="message-text" class="col-form-label">Tarea:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
+                                <textarea class="form-control" id="task-text"></textarea>
                             </div>
                             </form>
                         </div>
-                        <div class="modal-footer">
+                        <div class="modal-footer" id="send">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary" id="addbtn">Agregar</button>
+                            <button type="submit" class="btn btn-primary" id="addbtn">Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -169,7 +168,10 @@
                 </div>                               
             </div>
         </div>
-    </div>        
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+    </div>
+    <script src="CRUD.js" rel="text/script"></script>        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+  </script> 
 </body>
 </html>
