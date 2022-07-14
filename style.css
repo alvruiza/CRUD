@@ -94,7 +94,7 @@
     border-radius: 10px;
     padding-top: 5%;
     box-shadow: 1px 1px 5px grey;  
-    margin-bottom: 20%;
+    margin-bottom: 5%;
     margin-top: 10%;  
 }
 
@@ -102,42 +102,57 @@
     margin-bottom: 5%;
 }
 
-.buttonsrow {
-    margin-top: 10%;          
+.listin {
+    width: 90%;
 }
 
 .addtask {
-    color: white;  
-    background-color: rgb(0, 109, 252);  
-    border-radius: 25px;
-    border-color: rgb(0, 109, 252);
-    font-size: 13px;
+    color:  rgb(0, 109, 252);  
+    background-color: white; 
+    border-color: rgb(0, 109, 252); 
+    border-style: none;       
+    font-size: 2vh;
     font-weight: 600; 
     width: auto; 
+    height: auto;
     padding-top: 3%;
     padding-bottom: 3%;
     padding-right: 4%;
     padding-left: 4%; 
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     margin-top: 0%;
-    margin-right: 2%; 
-    margin-left: 70%;
+    margin-right: 0%; 
+    margin-left: 0%;
+    display: flex;
+    float: right;
+}
+
+.addsvg {
+    margin-right: 5%;
+    margin-top: 5%;
 }
 
 .edittask {
     color: rgb(0, 109, 252);
     background-color: white;      
     border-style: none;
-    font-size: 14px;
+    font-size: 2vh;
     font-weight: 600;
     border-radius: 25px;
     width: auto;
+    height:auto;
     padding-top: 3%;
     padding-bottom: 3%;
-    padding-right: 4%;
+    padding-right: 0%;
     padding-left: 4%;
     margin-bottom: 2%;
     margin-right: 0%; 
+}
+
+#editbtn {
+    color: rgb(0, 109, 252);
+    border-color: rgb(0, 109, 252);
+    background-color: white;
 }
 
 .editsvg {
@@ -149,15 +164,15 @@
 }
 
 .deletetask {
-    color: red;    
+    color: red;        
     border-style: none;
     background-color: white;
-    font-size: 14px;
+    font-size: 2vh;
     font-weight: 600;    
-    width: auto;
+    width: auto;    
     padding-top: 3%;
     padding-bottom: 3%;
-    padding-right: 4%;
+    padding-right: 0%;
     padding-left: 4%;
     margin-bottom: 2%; 
 }
@@ -211,4 +226,8 @@
     background-color: black;
     padding-left: 5%;
     font-size: 11px;
+}
+
+@media screen and (min-width:560px) {
+    
 }
