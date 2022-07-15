@@ -1,11 +1,24 @@
 .navbar {
-    background-color: white;
+    background-color: white;    
+}
+
+.navlist {
+    color:black;
+}
+
+a {
+    color: white;
+    text-decoration: none;   
+}
+
+a:hover {
+    color:#E50695;
 }
 
 .initdiv {
     width: 90%;
     margin-top: 5%;
-    margin-bottom: 5%;    
+    margin-bottom: 0%;        
 }
 
 .banner {
@@ -66,8 +79,7 @@
 .profile {
     width: 90%;
     border-radius: 7px;    
-    border-width: 1px;
-    box-shadow: 1px 1px 8px rgb(167, 167, 167);
+    border-width: 1px;    
     margin-bottom: 5%;
     margin-top: 5%;
 }
@@ -83,6 +95,13 @@
     font-weight: 700;
     margin-bottom: 5%;
     margin-top: 10%;
+}
+
+.myprofileh1 {
+    color: black;
+    text-align: left;    
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .todolist {
@@ -196,24 +215,26 @@
 
 .footermenu1 {
     list-style:none;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
     margin-bottom: 8%;
     padding-left: 5%;
+    line-height: 170%;
 }
 
 .footermenu2 {
     list-style:none;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
     margin-bottom: 8%;
     padding-left: 5%;
+    line-height: 170%;
 }
 
 .searchinput{
     width: 90%;
     margin-left: 5%;
-    margin-top: 10%;
+    margin-top: 10%;    
 }
 
 .searchbtn {
@@ -229,5 +250,211 @@
 }
 
 @media screen and (min-width:560px) {
+
+.listrow {
+    margin-bottom: 1%;    
+}
+
+.searchinput {
+    width:70%;
+}
+
+}
+
+@media screen and (min-width:760px) {
+    .addtask {
+        font-size: 16px;
+    }
+
+    .addsvg {
+        margin-top: 7%;
+    }
+
+    .footerlogo {
+        margin-top: 0%;
+        padding-top: 0%;
+        width:70%
+    }
+
+    .searchinput {
+        margin-bottom: 0%;
+        margin-top: 5%;
+        width: 60%;
+    }
+
+    .logo {
+        height:auto;
+        padding-top: 3%; 
+        padding-bottom: 4%;    
+        
+    }
+
+    .footer {
+        height: auto;
+    }
+ 
+}
+
+@media screen and (min-width: 880px) {
+    .profilepic{
+        margin-top: 12%;
+        width: 60%;
+    }
+
+    .addtask {
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-width: 992px) {
     
+    .navlogo {
+        margin-left: 20%;
+    }
+
+    .navlist {
+        padding-right: 5%;
+    }
+
+    .initdiv {
+        height: 10%;
+    }
+
+    .banner {
+        background-image: url(https://i.postimg.cc/C1Fz46rV/OFERTAS-1080-800-px-2048-500-px-2048-550-px-2048-900-px-2048-750-px-768-650-p.png);
+        margin-bottom: 0%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        height: 10%;
+    }
+    
+    .bannertittle {
+        text-align: left;
+        font-size: 45px;
+        margin-left: 5%;
+        height: auto;
+
+    }
+
+    .todoh1 {
+        margin-top: 0%;
+        margin-bottom: 2%;        
+        width:100%;
+    }
+
+    .profile {
+        margin-bottom: 1%;
+    }
+
+    .myprofileh1 {
+        color: black;
+        text-align: left;    
+        font-size: 30px;
+        font-weight: 700;
+        margin-left: 2%;
+        margin-bottom: 5%;       
+    }
+
+    .listrow {
+        margin-top: 4%;
+    }
+
+    .profilerow {
+        width: 100%;
+    }
+
+    .picturecol {
+        
+        width: 40%;
+    }
+    
+    .profiledata {
+        box-shadow: 1px 1px 5px grey;
+        border-radius: 10px;        
+    }
+
+    .profilecol {        
+        width: 20%;
+        margin-right: 0%;
+        padding-right: 0%;
+        margin-top: 0%;        
+    }
+
+    .picdiv {
+        margin-top: 7%;
+        margin-left: 7%;
+        width: 50%;        
+    }
+
+    .profileinfo {
+        margin-left: 38%;
+        margin-bottom: 25%;
+        padding-right: 0%;
+        padding-top: 5%;
+        padding-bottom: 3%;        
+        width: 75%;
+        text-align: right;
+    }
+    
+    .picol {
+        width: 50%;
+        display: flex;
+        float: left;
+        margin-top: 0%;
+    }
+
+    .profilepic {
+        width: 70%;
+        margin-left: 5%;
+        margin-top: 5%;
+        padding-right: 0%;
+        margin-right: 0%;
+    }
+
+    .taskcol {
+        width: 55%;
+        margin-left: 3%;
+    }
+
+    .addtask{        
+        padding-top: 0%;
+        padding-right: 7%;
+        margin-bottom: 5%;
+    }
+
+    .buttoncol {
+        margin-top: 0%;
+        padding-top: 0%;        
+    }
+
+    .inputcol{
+        width: 50%;
+        margin-left: 0%;
+        margin-right: 45%;
+        margin-top: 3%;
+    }
+
+    .footerlogo {
+        width: 60%;
+    }
+
+    .logo {        
+        margin-left: 5%;        
+        padding-top: 2%;
+    }
+
+    .logocol {
+        width: 60%;
+        margin-top: 0%;
+    }
+
+    .footermenucol1 {
+        width: 20%;
+    }
+
+    .footermenucol2 {
+        width: 20%;
+    }
+
 }
