@@ -39,49 +39,94 @@ a:hover {
 
 .profilecol {   
     text-align: right;
-    padding-right: 8%;
+    padding-right: 0%;
+    margin-right: 0%;
     padding-top: 5%;
     padding-bottom: 5%;
-    width: 70%;
+    width: 100%;    
+    
 }
 
 .picturecol {
-    width: 30%;    
+    width: 100%;    
+    margin-left: 0%;   
+    padding-right: 0%; 
+    padding-left: 0%;
+    margin-right: 0%;
+    margin-right: 0%;      
+}
+
+.picol {
+    padding-right: 0%;
+    width: 100%;    
+}
+
+.picdiv {
+    padding-right: 0%;    
+    margin-right: 0%;
+}
+
+.profiledata {
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+    width: 100%;    
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 0%;
+    margin-top: 8%;
+    margin-left: 0%;
 }
 
 .profileheading {
     width: 90%; 
     margin-top: 5%;   
-    margin-bottom: 5%;
+    margin-bottom: 5%;    
 }
 
 .profileh4 {
     font-size: 26px;
+    text-align: center;
 }
 
 .subheading {
     color: grey;
-    font-size: 14px;    
+    font-size: 14px; 
+    text-align: center;   
 }
 
 .schedule {
     color: rgb(177, 177, 177);
     font-size: 12px;
+    padding-bottom: 8%;
+    text-align: center;
 }
 
 .profilepic {
-    width: 70%;
+    width: 30%;
     border-radius:  100%;
-    margin-top: 17%;
-    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 35%;
+    padding-right: 0%;
+    margin-right: 0%;
 }
 
 .profile {
-    width: 90%;
+    width: 100%;
     border-radius: 7px;    
     border-width: 1px;    
     margin-bottom: 5%;
-    margin-top: 5%;
+    margin-top: 5%;   
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.profilerow {
+    width: 100%;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
 }
 
 .heading {
@@ -102,10 +147,13 @@ a:hover {
     text-align: left;    
     font-size: 30px;
     font-weight: 700;
+    width:100%;
+    margin-left: 3%;
 }
 
 .todolist {
-    width: 90%;      
+    width: 90%;   
+    padding-left: 0%;   
 }
 
 .listrow {
@@ -115,6 +163,8 @@ a:hover {
     box-shadow: 1px 1px 5px grey;  
     margin-bottom: 5%;
     margin-top: 10%;  
+    padding-right:0%;
+    padding-left: 0%;
 }
 
 .list {
@@ -123,6 +173,7 @@ a:hover {
 
 .listin {
     width: 90%;
+    padding-right: 0%;
 }
 
 .addtask {
@@ -259,6 +310,10 @@ a:hover {
     width:70%;
 }
 
+.footerlogo {
+    width: 70%;
+}
+
 }
 
 @media screen and (min-width:760px) {
@@ -297,12 +352,15 @@ a:hover {
 
 @media screen and (min-width: 880px) {
     .profilepic{
-        margin-top: 12%;
-        width: 60%;
+        margin-top: 8%;        
     }
 
     .addtask {
         margin-right: 2%;
+    }
+
+    .footerlogo {
+        width: 60%;
     }
 }
 
@@ -371,7 +429,8 @@ a:hover {
     
     .profiledata {
         box-shadow: 1px 1px 5px grey;
-        border-radius: 10px;        
+        border-radius: 10px; 
+        margin-top: 3%;       
     }
 
     .profilecol {        
