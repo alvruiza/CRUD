@@ -1,11 +1,17 @@
+//definición de variables globales
+
 const taskForm = document.getElementById("addbtn");
 const form = document.getElementById("taskform");
 const modal = document.getElementById("addtaskmodal");
 const list = document.getElementById("tasklist");
 const editBtn = document.getElementById("editbtn");
+const modalTrigger = document.getElementById("modaltrigger")
 
-
+//array vacion que recibe los datos como objetos
 let tareas = []
+
+/*funcion que recibe los valores de los campos del modal y los guarda como un objeto. 
+Luego hace push al array vacío y resetea el formulario para que quede en blanco */
 
 const getValues = (taskForm) => {    
     let newTask = document.querySelector("#task-text").value;
@@ -18,9 +24,16 @@ const getValues = (taskForm) => {
     form.reset()          
 }
 
+//funcion que guarda los datos en el local storage
+
 const saveTasks = () => {
     localStorage.setItem("tareas", JSON.stringify(tareas));
 }
+
+/* funciñon que borra los datos que le entrega la función action btns.
+realiza un forEach sobre el array de tareas, compara si el element.Tarea
+es igual al nTask que recibe de actionbtns si son iguales lo borra con el metodo splice
+vuelve a guardar los datos en el local storage y vuelve a imprimir en pantalla los datos del local storage*/
 
 const deleteTask = (nTask) => {
    let arrIndex; 
@@ -38,38 +51,53 @@ const deleteTask = (nTask) => {
    printTasks()
 }   
 
+/* funcion del boton "Agregar". al hacer click toma los valores de los campos del modal a través de getValues.
+luego guarda en el local storage e imprime el estado actual del local storage en pantalla*/
+
 taskForm.addEventListener("click", (save) => {
-    save.preventDefault()
+    save.preventDefault()    
     getValues()     
     saveTasks()
     printTasks()
 })
 
+/* funcion que edita lee los datos. A través de un forEach en el array compara si el element.Tarea
+es igual al nTask que recibe del addbtns y rellena los campos del modal con los datos existentes */
+
 const editTask = (nTask) => {
         tareas.forEach((element, index) => {
-        if(element.Tarea === nTask) {
-            arrIndex = index;           
-            document.getElementById("task-text").value = element.Tarea;
-            document.getElementById("recipient-name").value = element.Nombre;             
+            if(element.Tarea === nTask) {
+                arrIndex = index;                           
+                document.getElementById("task-text").value = element.Tarea;
+                document.getElementById("recipient-name").value = element.Nombre;       
         }       
         
     });    
-   
+    
 }
+
+/* función que edita los campos al hacer click en botón editar. 
+Muestra en los campos los valores prestablecidos y los redefine al hacer click
+luego guarda los valores en local storege, e imprime el nuevo contenido en pantalla
+finalmente hace que los campos del formulario vuelvan a estar vacíos*/
 
 editBtn.addEventListener("click", (edit) => {
     edit.preventDefault()  
     let editedObj = {
         Nombre: document.getElementById("recipient-name").value,
-        Tarea: document.getElementById("task-text").value,
-    }       
+        Tarea: document.getElementById("task-text").value,        
+    }     
     tareas.splice(arrIndex,1,editedObj)
     saveTasks()
     printTasks()
     form.reset()
 });
 
-
+/* función que imprime el contenido que  se genera en el modal en pantalla.
+lee el contenido del local sorage, si no encuentra nada deja el array original vacío
+Si encuentra datos realiza un ciclo forEach en cada elemento del array, en cada ciclo va
+dibujando en pantalla gracias al innerHTML y sumándose al contenido anterior. asi logra que se muestre
+todo y no un elemento a la vez*/
 
 const printTasks = () => {
     list.innerHTML = "" ;
@@ -97,8 +125,16 @@ const printTasks = () => {
     }
 }
 
+
+/* evento que se ejecuta cuando se carga el documento y ejecuta la función printTasks
+ para que cada vez que se cargue dibuje los elementos que encuentra en local storage*/
 document.addEventListener("DOMContentLoaded", printTasks) 
 
+/* eventlistener sobre los botones "Eliminar" y "Crear" que aparecen en cada ciclo de printTasks.
+busca qué botón se apretó a través de su innerText. y luego ejecuta la función correspondiente 
+a cada acción: deleteTask() o editTask(). Ambas tienen como parámetro lsTask que le indica la ruta 
+hacia el innerHTML que tiene el texto con la tarea específica de cada bloque creado */
+ 
 list.addEventListener("click", (actionbtns) => {
     actionbtns.preventDefault();  
     let lsTask = actionbtns.path[1].childNodes[1].childNodes[3].innerHTML;        
@@ -106,9 +142,22 @@ list.addEventListener("click", (actionbtns) => {
       deleteTask(lsTask)
     }
     if(actionbtns.target.innerText === "Editar") {
-      editTask(lsTask)
+      editTask(lsTask)      
     }
     
+});
+
+/* finalmente un event listener sobre el botón "Agregar", 
+para que cada vez que se presione muestre los campos del
+modal vacíos con form.reset() y no tome datos preestablecidos 
+con la función de editar */
+
+modalTrigger.addEventListener("click", (e) => {
+    e.preventDefault()
+    let trigger = e.path[0].innerText;
+    if(e.target.innerText === "Agregar") {
+        form.reset()
+    }
 });
 
 
