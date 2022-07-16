@@ -14,3 +14,5 @@ ver los campos editables para ingresar valores.
 
 El diseño del proyecto se hizo simulando una intranet corporativa en la que un miembro del equipo, en este caso un
 jefe de logísitica puede ver, agregar, quitar u editar tareas para otros miembros del equipo.
+
+link del proyecto https://effervescent-pothos-0ee2ca.netlify.app/
